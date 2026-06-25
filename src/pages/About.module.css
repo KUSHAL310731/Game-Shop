@@ -1,0 +1,225 @@
+.about {
+  padding-bottom: 4rem;
+}
+
+.hero {
+  padding: 5rem 0 3rem;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(123, 47, 247, 0.1) 0%, transparent 100%);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+.missionCard {
+  padding: 2rem;
+  background: rgba(22, 22, 35, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+
+.missionCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 0, 204, 0.3);
+  box-shadow: var(--shadow-glow);
+}
+
+.missionIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.missionCard h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent-cyan);
+}
+
+.missionCard p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.whyItem {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.whyItem:hover {
+  background: rgba(255, 0, 204, 0.08);
+  border-color: rgba(255, 0, 204, 0.2);
+  transform: translateY(-3px);
+}
+
+.whyItem span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.whyItem h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.whyItem p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.75rem;
+}
+
+.teamCard {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: rgba(22, 22, 35, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+
+.teamCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-glow);
+  border-color: rgba(255, 0, 204, 0.3);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  background: var(--gradient-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.teamCard h4 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.role {
+  color: var(--accent-pink);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.teamCard p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.experience {
+  padding: 2.5rem;
+  background:
+    linear-gradient(135deg, rgba(255, 0, 204, 0.08), rgba(51, 51, 255, 0.08)),
+    rgba(22, 22, 35, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  margin-top: 1rem;
+}
+
+.experience p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statLabel {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .experience {
+    padding: 1.5rem;
+  }
+}
